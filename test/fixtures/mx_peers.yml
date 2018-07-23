@@ -3,21 +3,23 @@
 one:
   url: MyString
   ip: MyString
-  first_seen: 2018-07-23 15:45:02
-  last_seen: 2018-07-23 15:45:02
-  response_time: 2018-07-23 15:45:02
+  first_seen: 2018-07-23 16:01:52
+  last_seen: 2018-07-23 16:01:52
+  response_time: 2018-07-23 16:01:52
   node_type: MyString
   distance: 1
   uuid: 
   trust: 1
+  public_key: MyText
 
 two:
   url: MyString
   ip: MyString
-  first_seen: 2018-07-23 15:45:02
-  last_seen: 2018-07-23 15:45:02
-  response_time: 2018-07-23 15:45:02
+  first_seen: 2018-07-23 16:01:52
+  last_seen: 2018-07-23 16:01:52
+  response_time: 2018-07-23 16:01:52
   node_type: MyString
   distance: 1
   uuid: 
   trust: 1
+  public_key: MyText

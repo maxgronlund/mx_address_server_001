@@ -69,6 +69,6 @@ class MxPeersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def mx_peer_params
-      params.require(:mx_peer).permit(:url, :ip, :first_seen, :last_seen, :response_time, :node_type, :distance, :uuid, :trust)
+      params.require(:mx_peer).permit(:url, :ip, :first_seen, :last_seen, :response_time, :node_type, :distance, :uuid, :trust, :public_key)
     end
 end

@@ -10,6 +10,7 @@ class CreateMxPeers < ActiveRecord::Migration[5.2]
       t.integer :distance
       t.uuid :uuid
       t.integer :trust
+      t.text :public_key
 
       t.timestamps
     end

@@ -12,6 +12,7 @@ table
       th Distance
       th Uuid
       th Trust
+      th Public key
       th
       th
       th
@@ -28,6 +29,7 @@ table
         td = mx_peer.distance
         td = mx_peer.uuid
         td = mx_peer.trust
+        td = mx_peer.public_key
         td = link_to 'Show', mx_peer
         td = link_to 'Edit', edit_mx_peer_path(mx_peer)
         td = link_to 'Destroy', mx_peer, data: { confirm: 'Are you sure?' }, method: :delete

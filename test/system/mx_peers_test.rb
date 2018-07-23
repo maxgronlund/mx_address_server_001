@@ -19,6 +19,7 @@ class MxPeersTest < ApplicationSystemTestCase
     fill_in "Ip", with: @mx_peer.ip
     fill_in "Last Seen", with: @mx_peer.last_seen
     fill_in "Node Type", with: @mx_peer.node_type
+    fill_in "Public Key", with: @mx_peer.public_key
     fill_in "Response Time", with: @mx_peer.response_time
     fill_in "Trust", with: @mx_peer.trust
     fill_in "Url", with: @mx_peer.url
@@ -38,6 +39,7 @@ class MxPeersTest < ApplicationSystemTestCase
     fill_in "Ip", with: @mx_peer.ip
     fill_in "Last Seen", with: @mx_peer.last_seen
     fill_in "Node Type", with: @mx_peer.node_type
+    fill_in "Public Key", with: @mx_peer.public_key
     fill_in "Response Time", with: @mx_peer.response_time
     fill_in "Trust", with: @mx_peer.trust
     fill_in "Url", with: @mx_peer.url

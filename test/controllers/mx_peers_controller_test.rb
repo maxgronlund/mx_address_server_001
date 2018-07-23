@@ -17,7 +17,7 @@ class MxPeersControllerTest < ActionDispatch::IntegrationTest
 
   test "should create mx_peer" do
     assert_difference('MxPeer.count') do
-      post mx_peers_url, params: { mx_peer: { distance: @mx_peer.distance, first_seen: @mx_peer.first_seen, ip: @mx_peer.ip, last_seen: @mx_peer.last_seen, node_type: @mx_peer.node_type, response_time: @mx_peer.response_time, trust: @mx_peer.trust, url: @mx_peer.url, uuid: @mx_peer.uuid } }
+      post mx_peers_url, params: { mx_peer: { distance: @mx_peer.distance, first_seen: @mx_peer.first_seen, ip: @mx_peer.ip, last_seen: @mx_peer.last_seen, node_type: @mx_peer.node_type, public_key: @mx_peer.public_key, response_time: @mx_peer.response_time, trust: @mx_peer.trust, url: @mx_peer.url, uuid: @mx_peer.uuid } }
     end
 
     assert_redirected_to mx_peer_url(MxPeer.last)
@@ -34,7 +34,7 @@ class MxPeersControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update mx_peer" do
-    patch mx_peer_url(@mx_peer), params: { mx_peer: { distance: @mx_peer.distance, first_seen: @mx_peer.first_seen, ip: @mx_peer.ip, last_seen: @mx_peer.last_seen, node_type: @mx_peer.node_type, response_time: @mx_peer.response_time, trust: @mx_peer.trust, url: @mx_peer.url, uuid: @mx_peer.uuid } }
+    patch mx_peer_url(@mx_peer), params: { mx_peer: { distance: @mx_peer.distance, first_seen: @mx_peer.first_seen, ip: @mx_peer.ip, last_seen: @mx_peer.last_seen, node_type: @mx_peer.node_type, public_key: @mx_peer.public_key, response_time: @mx_peer.response_time, trust: @mx_peer.trust, url: @mx_peer.url, uuid: @mx_peer.uuid } }
     assert_redirected_to mx_peer_url(@mx_peer)
   end
 
