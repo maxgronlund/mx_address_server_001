@@ -3,9 +3,9 @@
 one:
   url: MyString
   ip: MyString
-  first_seen: 2018-07-23 16:01:52
-  last_seen: 2018-07-23 16:01:52
-  response_time: 2018-07-23 16:01:52
+  first_seen: 2018-07-23 16:34:48
+  last_seen: 2018-07-23 16:34:48
+  response_time: 2018-07-23 16:34:48
   node_type: MyString
   distance: 1
   uuid: 
@@ -15,9 +15,9 @@ one:
 two:
   url: MyString
   ip: MyString
-  first_seen: 2018-07-23 16:01:52
-  last_seen: 2018-07-23 16:01:52
-  response_time: 2018-07-23 16:01:52
+  first_seen: 2018-07-23 16:34:48
+  last_seen: 2018-07-23 16:34:48
+  response_time: 2018-07-23 16:34:48
   node_type: MyString
   distance: 1
   uuid: 

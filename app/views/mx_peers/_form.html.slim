@@ -1,39 +1,17 @@
-= form_for @mx_peer do |f|
-  - if @mx_peer.errors.any?
-    #error_explanation
-      h2 = "#{pluralize(@mx_peer.errors.count, "error")} prohibited this mx_peer from being saved:"
-      ul
-        - @mx_peer.errors.full_messages.each do |message|
-          li = message
+= simple_form_for(@mx_peer) do |f|
+  = f.error_notification
 
-  .field
-    = f.label :url
-    = f.text_field :url
-  .field
-    = f.label :ip
-    = f.text_field :ip
-  .field
-    = f.label :first_seen
-    = f.datetime_select :first_seen
-  .field
-    = f.label :last_seen
-    = f.datetime_select :last_seen
-  .field
-    = f.label :response_time
-    = f.time_select :response_time
-  .field
-    = f.label :node_type
-    = f.text_field :node_type
-  .field
-    = f.label :distance
-    = f.number_field :distance
-  .field
-    = f.label :uuid
-    = f.text_field :uuid
-  .field
-    = f.label :trust
-    = f.number_field :trust
-  .field
-    = f.label :public_key
-    = f.text_area :public_key
-  .actions = f.submit
+  .form-inputs
+    = f.input :url
+    = f.input :ip
+    = f.input :first_seen
+    = f.input :last_seen
+    = f.input :response_time
+    = f.input :node_type , collection: MxPeer::SERVER_TYPES, include_blank: false
+    = f.input :distance
+    = f.input :uuid
+    = f.input :trust
+    = f.input :public_key
+
+  .form-actions
+    = f.button :submit

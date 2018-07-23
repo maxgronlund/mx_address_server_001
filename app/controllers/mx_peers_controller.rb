@@ -14,7 +14,7 @@ class MxPeersController < ApplicationController
 
   # GET /mx_peers/new
   def new
-    @mx_peer = MxPeer.new
+    @mx_peer = MxPeer.new(trust: 0, distance: 0)
   end
 
   # GET /mx_peers/1/edit

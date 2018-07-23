@@ -1,4 +1,4 @@
-class Api::V1::MxPeersController < ApplicationController
+class Api::V1::MxAddressServersController < ApplicationController
   before_action :set_mx_peer, only: [:show, :edit, :update, :destroy]
 
   # GET /mx_peers

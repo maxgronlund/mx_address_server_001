@@ -1,13 +1,12 @@
 Rails.application.routes.draw do
-  resources :mx_peers
 
+  resources :mx_peers
   namespace :api do
     namespace :v1 do
      resources :mx_address_servers
      resources :mx_authorization_providers
      resources :mx_authentication_providers
 
-     resources :mx_peers
     end
   end
 
