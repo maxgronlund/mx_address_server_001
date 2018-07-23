@@ -1,0 +1,33 @@
+p#notice = notice
+
+p
+  strong Url:
+  = @mx_peer.url
+p
+  strong Ip:
+  = @mx_peer.ip
+p
+  strong First seen:
+  = @mx_peer.first_seen
+p
+  strong Last seen:
+  = @mx_peer.last_seen
+p
+  strong Response time:
+  = @mx_peer.response_time
+p
+  strong Node type:
+  = @mx_peer.node_type
+p
+  strong Distance:
+  = @mx_peer.distance
+p
+  strong Uuid:
+  = @mx_peer.uuid
+p
+  strong Trust:
+  = @mx_peer.trust
+
+=> link_to 'Edit', edit_mx_peer_path(@mx_peer)
+'|
+=< link_to 'Back', mx_peers_path

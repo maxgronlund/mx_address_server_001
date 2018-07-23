@@ -1,0 +1,36 @@
+= form_for @mx_peer do |f|
+  - if @mx_peer.errors.any?
+    #error_explanation
+      h2 = "#{pluralize(@mx_peer.errors.count, "error")} prohibited this mx_peer from being saved:"
+      ul
+        - @mx_peer.errors.full_messages.each do |message|
+          li = message
+
+  .field
+    = f.label :url
+    = f.text_field :url
+  .field
+    = f.label :ip
+    = f.text_field :ip
+  .field
+    = f.label :first_seen
+    = f.datetime_select :first_seen
+  .field
+    = f.label :last_seen
+    = f.datetime_select :last_seen
+  .field
+    = f.label :response_time
+    = f.time_select :response_time
+  .field
+    = f.label :node_type
+    = f.text_field :node_type
+  .field
+    = f.label :distance
+    = f.number_field :distance
+  .field
+    = f.label :uuid
+    = f.text_field :uuid
+  .field
+    = f.label :trust
+    = f.number_field :trust
+  .actions = f.submit

@@ -1,0 +1,2 @@
+class MxPeer < ApplicationRecord
+end

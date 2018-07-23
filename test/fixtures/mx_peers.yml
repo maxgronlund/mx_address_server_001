@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  url: MyString
+  ip: MyString
+  first_seen: 2018-07-23 15:45:02
+  last_seen: 2018-07-23 15:45:02
+  response_time: 2018-07-23 15:45:02
+  node_type: MyString
+  distance: 1
+  uuid: 
+  trust: 1
+
+two:
+  url: MyString
+  ip: MyString
+  first_seen: 2018-07-23 15:45:02
+  last_seen: 2018-07-23 15:45:02
+  response_time: 2018-07-23 15:45:02
+  node_type: MyString
+  distance: 1
+  uuid: 
+  trust: 1
