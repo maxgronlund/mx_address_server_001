@@ -22,5 +22,6 @@ Things you may want to cover:
 * Deployment instructions
 
 * Migrations
+  $ heroku run --app mx-address-server-001 rake db:migrate
 
 rails g scaffold mx_peer url ip first_seen:datetime last_seen:datetime response_time:time node_type distance:integer uuid:uuid trust:integer public_key:text

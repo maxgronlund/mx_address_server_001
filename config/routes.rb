@@ -3,7 +3,12 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-       end
+     resources :mx_address_servers
+     resources :mx_authorization_providers
+     resources :mx_authentication_providers
+
+     resources :mx_peers
+    end
   end
 
   get 'home/index'
