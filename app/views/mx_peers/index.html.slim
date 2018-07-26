@@ -3,16 +3,10 @@ h1 Listing mx_peers
 table
   thead
     tr
+      th Name
       th Url
-      th Ip
-      th First seen
-      th Last seen
-      th Response time
       th Node type
-      th Distance
-      th Uuid
       th Trust
-      th Public key
       th
       th
       th
@@ -20,16 +14,10 @@ table
   tbody
     - @mx_peers.each do |mx_peer|
       tr
-        td = mx_peer.url
-        td = mx_peer.ip
-        td = mx_peer.first_seen
-        td = mx_peer.last_seen
-        td = mx_peer.response_time
+        td = mx_peer.name
+        td = link_to mx_peer.url, mx_peer.url
         td = mx_peer.node_type
-        td = mx_peer.distance
-        td = mx_peer.uuid
         td = mx_peer.trust
-        td = mx_peer.public_key
         td = link_to 'Show', mx_peer
         td = link_to 'Edit', edit_mx_peer_path(mx_peer)
         td = link_to 'Destroy', mx_peer, data: { confirm: 'Are you sure?' }, method: :delete

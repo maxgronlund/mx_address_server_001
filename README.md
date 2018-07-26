@@ -20,6 +20,8 @@ Things you may want to cover:
 * Services (job queues, cache servers, search engines, etc.)
 
 * Deployment instructions
+  $ git push origin master
+  $ heroku run rake db:migrate --app mx-address-server-001
 
 * Migrations
   $ heroku run --app mx-address-server-001 rake db:migrate

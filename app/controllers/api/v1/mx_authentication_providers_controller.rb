@@ -1,10 +1,10 @@
-class Api::V1::MxAddressServersController < ApplicationController
+class Api::V1::MxAuthenticationProvidersController < ApplicationController
   # before_action :set_mx_peer, only: [:show, :edit, :update, :destroy]
 
   # GET /mx_peers
   # GET /mx_peers.json
   def index
-    @mx_peers = MxPeer.where(node_type: MxPeer::ADDRESS_SERVER)
+    @mx_peers = MxPeer.where(node_type: MxPeer::AUTHENTICATION_PROVIDER)
     render json: @mx_peers
   end
 

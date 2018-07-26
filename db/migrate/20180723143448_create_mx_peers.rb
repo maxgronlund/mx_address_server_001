@@ -1,5 +1,6 @@
 class CreateMxPeers < ActiveRecord::Migration[5.2]
   def change
+    drop_table :mx_peers
     create_table :mx_peers, id: :uuid do |t|
       t.string :url
       t.string :ip

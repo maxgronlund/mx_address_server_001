@@ -35,6 +35,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'slim-rails'
 gem 'simple_form'
+gem 'awesome_print'
 
 
 # Reduces boot times through caching; required in config/boot.rb
