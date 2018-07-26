@@ -11,6 +11,7 @@ class MxPeer < ApplicationRecord
       ['Address server', ADDRESS_SERVER],
       ['Authorization provider', AUTHORIZATION_PROVIDER],
       ['Authentication provider', AUTHENTICATION_PROVIDER],
+      ['Public ledger', PUBLIC_LEDGER],
       ['Payment gateway', PAYMENT_GATEWAY],
       ['Third party service', THIRD_PARTY_SERVICE]
     ].freeze
