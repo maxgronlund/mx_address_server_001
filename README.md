@@ -23,6 +23,9 @@ Things you may want to cover:
   $ git push origin master
   $ heroku run rake db:migrate --app mx-address-server-001
 
+* How to log on heroku
+  $ heroku logs --tail --app mx-address-server-001
+
 * Migrations
   $ heroku run --app mx-address-server-001 rake db:migrate
 

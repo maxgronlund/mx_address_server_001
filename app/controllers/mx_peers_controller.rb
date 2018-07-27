@@ -4,7 +4,7 @@ class MxPeersController < ApplicationController
   # GET /mx_peers
   # GET /mx_peers.json
   def index
-    @mx_peers = MxPeer.all
+    @mx_peers = MxPeer.order(:name)
   end
 
   # GET /mx_peers/1
